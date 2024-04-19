@@ -48,12 +48,17 @@ nav{
   background-color: #565353;
 color:#e7e1e1
 }
+
 .createtask-input{
   border:"1px solid black" !important;
 }
 
 .delete-btn{
-  background-color: white;
+  background-color: antiquewhite;
   border:none
 
+}
+.delete-btn:focus{
+border-radius: 20px;
+  background-color: #d5cfcf;
 }

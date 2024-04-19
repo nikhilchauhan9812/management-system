@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const Delete=(props)=>{
     const navigate=useNavigate()
     const deletetask=()=>{
-       
+      
+       if(window.confirm("Are you sure you want to delete this task?")){
             
             fetch(`/deletetask/${props.taskid}`,{
                 method:"delete",
@@ -24,7 +25,7 @@ const Delete=(props)=>{
             }).catch(err=>{
                 console.log(err)
             })
-       
+        }
         }
         return (
         // <button onClick={() => {console.log(props.taskid)}}>delete</button>
